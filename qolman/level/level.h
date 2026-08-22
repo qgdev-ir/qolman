@@ -13,6 +13,11 @@ struct qolman_level {
 	char *label;
 };
 
+/*
+ * Pointer to actual level
+ */
+typedef const struct qolman_level *qolman_level_t;
+
 #ifdef __cplusplus
 }
 #endif
