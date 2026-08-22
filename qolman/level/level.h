@@ -5,6 +5,14 @@
 extern "C" {
 #endif
 
+/*
+ * Public implementation of log level
+ */
+struct qolman_level {
+	int importance;
+	char *label;
+};
+
 #ifdef __cplusplus
 }
 #endif
