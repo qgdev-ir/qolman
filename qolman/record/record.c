@@ -13,3 +13,10 @@ qolman_result_t qolman_record_create(qolman_record_t *record, time_t t, qolman_l
 	return QOLMAN_RESULT_OK;
 }
 
+qolman_result_t qolman_record_destroy(qolman_record_t r) {
+	free(r->label);
+	if (r->description) free(r->description);
+	free(r);
+	return QOLMAN_RESULT_OK;
+}
+
