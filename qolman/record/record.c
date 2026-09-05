@@ -32,3 +32,7 @@ char *qolman_record_label(qolman_record_t r) {
 	return r->label;
 }
 
+char *qolman_record_description(qolman_record_t r) {
+	return r->description;
+}
+
