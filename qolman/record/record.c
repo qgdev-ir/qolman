@@ -20,3 +20,7 @@ qolman_result_t qolman_record_destroy(qolman_record_t r) {
 	return QOLMAN_RESULT_OK;
 }
 
+time_t qolman_record_time(qolman_record_t r) {
+	return r->time;
+}
+

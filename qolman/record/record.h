@@ -23,6 +23,11 @@ qolman_result_t qolman_record_create(qolman_record_t *record, time_t time, qolma
  */
 qolman_result_t qolman_record_destroy(qolman_record_t r);
 
+/*
+ * Returns time of the record
+ */
+time_t qolman_record_time(qolman_record_t r);
+
 #ifdef __cplusplus
 }
 #endif
