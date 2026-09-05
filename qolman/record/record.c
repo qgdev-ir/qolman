@@ -1,2 +1,15 @@
 #include "record.internal.h"
 
+qolman_result_t qolman_record_create(qolman_record_t *record, time_t t, qolman_level_t level, char *label, char *description) {
+	if (!t) time(&t);
+	if (description) description = strdup(description);
+	label = strdup(label);
+	qolman_record_t r = malloc(sizeof(struct qolman_record));
+	r->time = t;
+	r->level = level;
+	r->label = label;
+	r->description = description;
+	*record = r;
+	return QOLMAN_RESULT_OK;
+}
+
