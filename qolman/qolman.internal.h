@@ -7,6 +7,11 @@
 extern "C" {
 #endif
 
+#define qolman_run(c) do { \
+		qolman_result_t res = c; \
+		if (res != QOLMAN_RESULT_OK) return res; \
+	} while(0);
+
 #ifdef __cplusplus
 }
 #endif
