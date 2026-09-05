@@ -8,6 +8,10 @@ bool test_qolman_record_create_destroy() {
 
 	bool success = 1;
 	success &= qolman_record_create(&record, 1676385060, &level, "phoenix", NULL) == QOLMAN_RESULT_OK;
+	success &= qolman_record_time(record) == 1676385060;
+	success &= qolman_record_level(record) == &level;
+	success &= strcmp(qolman_record_label(record), "phoenix") == 0;
+	success &= qolman_record_description(record) == NULL;
 	success &= qolman_record_destroy(record) == QOLMAN_RESULT_OK;
 	test_result_log(success);
 	return success;
