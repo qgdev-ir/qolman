@@ -18,6 +18,18 @@ struct qolman_level {
  */
 typedef const struct qolman_level *qolman_level_t;
 
+/*
+ * Gets qolman default level by its importance
+ *
+ * Default levels:
+ * -2:	trace
+ * -1:	debug
+ * 0:	info
+ * 1:	warning
+ * 2:	error
+ */
+qolman_level_t qolman_level_get(int importance);
+
 #ifdef __cplusplus
 }
 #endif

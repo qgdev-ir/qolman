@@ -16,3 +16,9 @@ const struct qolman_level qolman_level_defaults[] = {
 	{ 2, "error" },
 };
 
+qolman_level_t qolman_level_get(int importance) {
+	int index = importance - qolman_level_defaults[0].importance;
+	if (0 > index || index >= (sizeof(qolman_level_defaults) / sizeof(struct qolman_level))) return NULL;
+	return &qolman_level_defaults[index];
+}
+
