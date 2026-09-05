@@ -8,6 +8,13 @@
 extern "C" {
 #endif
 
+/*
+ * Result of a qolman function
+ */
+typedef enum {
+	QOLMAN_RESULT_OK = 0,	// Operation was successful
+} qolman_result_t;
+
 #ifdef __cplusplus
 }
 #endif
