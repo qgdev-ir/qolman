@@ -2,6 +2,7 @@
 #define _qolman_qolman_h_
 
 #include <stddef.h>
+#include <time.h>
 
 #ifdef __cplusplus
 extern "C" {
