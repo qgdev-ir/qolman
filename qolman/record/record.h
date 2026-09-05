@@ -28,6 +28,11 @@ qolman_result_t qolman_record_destroy(qolman_record_t r);
  */
 time_t qolman_record_time(qolman_record_t r);
 
+/*
+ * Returns level of the record
+ */
+qolman_level_t qolman_record_level(qolman_record_t r);
+
 #ifdef __cplusplus
 }
 #endif
