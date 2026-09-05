@@ -23,6 +23,26 @@ qolman_result_t qolman_record_create(qolman_record_t *record, time_t time, qolma
  */
 qolman_result_t qolman_record_destroy(qolman_record_t r);
 
+/*
+ * Returns time of the record
+ */
+time_t qolman_record_time(qolman_record_t r);
+
+/*
+ * Returns level of the record
+ */
+qolman_level_t qolman_record_level(qolman_record_t r);
+
+/*
+ * Returns label of the record
+ */
+char *qolman_record_label(qolman_record_t r);
+
+/*
+ * Returns description of the record
+ */
+char *qolman_record_description(qolman_record_t r);
+
 #ifdef __cplusplus
 }
 #endif

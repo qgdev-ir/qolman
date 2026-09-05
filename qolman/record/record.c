@@ -20,3 +20,19 @@ qolman_result_t qolman_record_destroy(qolman_record_t r) {
 	return QOLMAN_RESULT_OK;
 }
 
+time_t qolman_record_time(qolman_record_t r) {
+	return r->time;
+}
+
+qolman_level_t qolman_record_level(qolman_record_t r) {
+	return r->level;
+}
+
+char *qolman_record_label(qolman_record_t r) {
+	return r->label;
+}
+
+char *qolman_record_description(qolman_record_t r) {
+	return r->description;
+}
+
