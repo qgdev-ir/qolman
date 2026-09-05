@@ -7,6 +7,16 @@
 extern "C" {
 #endif
 
+/*
+ * Record implementation
+ */
+struct qolman_record {
+	time_t time;
+	qolman_level_t level;
+	char *label;
+	char *description;
+};
+
 #ifdef __cplusplus
 }
 #endif
