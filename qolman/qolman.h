@@ -12,6 +12,7 @@ extern "C" {
 #endif
 
 #include <qolman/level/level.h>
+#include <qolman/record/record.h>
 
 #endif
 
