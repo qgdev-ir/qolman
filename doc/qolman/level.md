@@ -10,7 +10,6 @@ A log level is a measure to categorize logs based on their importance
 - label: Label of the level
 
 ## Implementation
-Not implemented
-> How is this going to be implemented in c is a mystery for now XD
+- Package [level](../../qolman/level): fully implemented
 
 [back](index.md)
