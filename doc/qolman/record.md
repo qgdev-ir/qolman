@@ -10,6 +10,11 @@ An object to store information about a log record
 | description       | multiline line full info about the log | `something went really wrong at line 26` |    no    |
 
 ## Implementation
-Not implemented
+- Package [record](../../qolman/record):
+    - Implemented fields (including struct field and getter):
+        - `time`: Fully implemented (constructor arg)
+        - `level`: Fully implemented (constructor arg)
+        - `label`: Fully implemented (constructor arg)
+        - `description`: Fully implemented (constructor arg)
 
 [back](index.md)
