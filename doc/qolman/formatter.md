@@ -17,6 +17,7 @@ description: something went really wrong at line 26
 
 ## Implementation
 - [ ] Formatter core (typedefs, ...)
+    - Package [record](../../qolman/record):
 - [ ] Human-readable text formatter
 - [ ] Machine-readable JSON formatter
 
