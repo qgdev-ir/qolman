@@ -5,6 +5,11 @@
 extern "C" {
 #endif
 
+/*
+ * Function to handle a log
+ */
+typedef void (*qolman_handler_function_handle)(qolman_handler_t handler, char *log);
+
 #ifdef __cplusplus
 }
 #endif
