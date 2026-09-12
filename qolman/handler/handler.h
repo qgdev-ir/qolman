@@ -30,6 +30,11 @@ qolman_result_t qolman_handler_create(qolman_handler_t *handler, qolman_handler_
  */
 qolman_result_t qolman_handler_destroy(qolman_handler_t handler);
 
+/*
+ * Returns level of handler
+ */
+qolman_level_t qolman_handler_level(qolman_handler_t handler);
+
 #ifdef __cplusplus
 }
 #endif
