@@ -15,6 +15,7 @@ qolman_result_t qolman_record_create(qolman_record_t *record, time_t t, qolman_l
 }
 
 qolman_result_t qolman_record_destroy(qolman_record_t r) {
+	free(r->logger);
 	free(r->label);
 	if (r->description) free(r->description);
 	free(r);
