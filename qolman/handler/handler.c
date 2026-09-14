@@ -54,3 +54,7 @@ qolman_result_t qolman_handler_filep(qolman_handler_t *handler, FILE *fp) {
 	return QOLMAN_RESULT_OK;
 }
 
+qolman_result_t qolman_handler_file(qolman_handler_t *handler, char *f) {
+	return qolman_handler_filep(handler, fopen(f, "a"));
+}
+
