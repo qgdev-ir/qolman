@@ -65,6 +65,11 @@ qolman_result_t qolman_handler_stdout(qolman_handler_t *handler);
  */
 qolman_result_t qolman_handler_stderr(qolman_handler_t *handler);
 
+/*
+ * Creates a handler that writes log record in given file pointer
+ */
+qolman_result_t qolman_handler_filep(qolman_handler_t *handler, FILE *fp);
+
 #ifdef __cplusplus
 }
 #endif
