@@ -20,6 +20,11 @@ qolman_result_t qolman_manager_create(qolman_manager_t *manager, qolman_formatte
  */
 qolman_result_t qolman_manager_destroy(qolman_manager_t manager);
 
+/*
+ * Set handlers for log manager
+ */
+qolman_result_t qolman_manager_handlers_set(qolman_manager_t manager, qolman_handler_t* handlers, size_t length);
+
 #ifdef __cplusplus
 }
 #endif
