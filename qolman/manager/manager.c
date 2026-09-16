@@ -10,3 +10,8 @@ qolman_result_t qolman_manager_create(qolman_manager_t *manager, qolman_formatte
 	return QOLMAN_RESULT_OK;
 }
 
+qolman_result_t qolman_manager_destroy(qolman_manager_t m) {
+	free(m);
+	return QOLMAN_RESULT_OK;
+}
+

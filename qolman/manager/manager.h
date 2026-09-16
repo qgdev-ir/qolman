@@ -15,6 +15,11 @@ typedef struct qolman_manager *qolman_manager_t;
  */
 qolman_result_t qolman_manager_create(qolman_manager_t *manager, qolman_formatter_t formatter);
 
+/*
+ * Destroys a log manager
+ */
+qolman_result_t qolman_manager_destroy(qolman_manager_t manager);
+
 #ifdef __cplusplus
 }
 #endif
