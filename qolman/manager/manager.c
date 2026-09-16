@@ -24,3 +24,8 @@ qolman_result_t qolman_manager_handlers_set(qolman_manager_t m, qolman_handler_t
 	return QOLMAN_RESULT_OK;
 }
 
+qolman_handler_t *qolman_manager_handlers(qolman_manager_t m, size_t *length) {
+	if (length) *length = m->handlers_length;
+	return m->handlers;
+}
+
