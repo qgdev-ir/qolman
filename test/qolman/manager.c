@@ -32,6 +32,12 @@ bool test_qolman_manager_create_destroy() {
 	success &= qolman_manager_formatter_set(manager, &qolman_formatter_text) == QOLMAN_RESULT_OK;
 	success &= qolman_manager_formatter(manager) == &qolman_formatter_text;
 
+	qolman_record_t record;
+	success &= qolman_record_create(&record, 1676385060, &level, "god", "phoenix", NULL) == QOLMAN_RESULT_OK;
+	success &= qolman_manager_handle(manager, record) == QOLMAN_RESULT_OK;
+	success &= strcmp("[2023-02-14 18:01:00] [godlevel] [god] phoenix\n", *(char **) handler->data) == 0;
+	success &= qolman_record_destroy(record) == QOLMAN_RESULT_OK;
+
 	success &= qolman_manager_destroy(manager) == QOLMAN_RESULT_OK;
 	test_result_log(success);
 	return success;
