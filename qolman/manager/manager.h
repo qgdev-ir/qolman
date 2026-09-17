@@ -31,6 +31,11 @@ qolman_result_t qolman_manager_handlers_set(qolman_manager_t manager, qolman_han
  */
 qolman_handler_t *qolman_manager_handlers(qolman_manager_t manager, size_t *length);
 
+/*
+ * Set level of the log manager
+ */
+qolman_result_t qolman_manager_level_set(qolman_manager_t manager, qolman_level_t level);
+
 #ifdef __cplusplus
 }
 #endif
