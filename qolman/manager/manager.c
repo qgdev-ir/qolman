@@ -34,3 +34,7 @@ qolman_result_t qolman_manager_level_set(qolman_manager_t m, qolman_level_t leve
 	return QOLMAN_RESULT_OK;
 }
 
+qolman_level_t qolman_manager_level(qolman_manager_t m) {
+	return m->level;
+}
+
