@@ -43,3 +43,7 @@ qolman_result_t qolman_manager_formatter_set(qolman_manager_t m, qolman_formatte
 	return QOLMAN_RESULT_OK;
 }
 
+qolman_formatter_t qolman_manager_formatter(qolman_manager_t m) {
+	return m->formatter;
+}
+
