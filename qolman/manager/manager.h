@@ -56,6 +56,11 @@ qolman_formatter_t qolman_manager_formatter(qolman_manager_t manager);
  */
 qolman_result_t qolman_manager_handle(qolman_manager_t manager, qolman_record_t record);
 
+/*
+ * Creates and handler a log record (its quick because you do it in a single function call)
+ */
+qolman_result_t qolman_manager_handle_quick(qolman_manager_t m, time_t t, qolman_level_t level, char *logger, char *label, char *description);
+
 #ifdef __cplusplus
 }
 #endif
