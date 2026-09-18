@@ -1,6 +1,12 @@
 #ifndef _qolman_manager_manager_h_
 #define _qolman_manager_manager_h_
 
+#define qolman_manager_handle_trace(m, t, logger, label, description) qolman_manager_handle_quick(m, t, qolman_level_get(-2), logger, label, description)
+#define qolman_manager_handle_debug(m, t, logger, label, description) qolman_manager_handle_quick(m, t, qolman_level_get(-1), logger, label, description)
+#define qolman_manager_handle_info(m, t, logger, label, description) qolman_manager_handle_quick(m, t, qolman_level_get(0), logger, label, description)
+#define qolman_manager_handle_warning(m, t, logger, label, description) qolman_manager_handle_quick(m, t, qolman_level_get(1), logger, label, description)
+#define qolman_manager_handle_error(m, t, logger, label, description) qolman_manager_handle_quick(m, t, qolman_level_get(2), logger, label, description)
+
 #ifdef __cplusplus
 extern "C" {
 #endif
